@@ -35,7 +35,7 @@ jobs:
           
    # Build React App with Yarn       
     - name: build React App
-      run: yarn Build     
+      run: yarn build     
           
      # install surge     
     - name: Installing Surge
