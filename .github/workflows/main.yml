@@ -20,18 +20,17 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-      
-   # install NodeJS
+
    - name: install node.JS
      uses: actions/setup-node@v2-beta
      with:
        node-version: 12
      
-  # Install Yarn   
+   # Install Yarn   
    - name: GitHub Action for Yarn
      uses: borales/actions-yarn@v2.3.0
       with:
-        # Yarn command
+          # Yarn command
           cmd: install # install/ yarn install
           
    # Build REact App with Yarn       
