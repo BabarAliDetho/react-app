@@ -6,7 +6,7 @@ function App() {
       <h1> Hello World from Mr.Babar-Detho </h1>
       <h2><href>sordid-account.surge.sh</href></h2>
       <h3><href>babardetho.surge.sh</href></h3>
-      <h4>On the Way</h4>
+      <h4>Comming Soon</h4>
     </div>
   );
 }
