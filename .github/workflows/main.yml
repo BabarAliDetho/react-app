@@ -33,11 +33,11 @@ jobs:
     
       # build React App with Yarn       
     - name: Build React App
-      run: yarn build 
+      run: yarn build
       
       # install surge     
-    - name: Installing Surge
-      run: npm install --global surge
+    - name: installing surge
+      run: npm install -g surge
     
     - name: deploying on surge
       run: surge ./build http://hkbd.surge.sh/ --token ${{secrets.SURGE_Token}}
