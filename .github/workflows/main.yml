@@ -21,26 +21,22 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses:  actions/checkout@v2
    
-   
     - uses: actions/setup-node@v2-beta
       with:
        node-version: 12
      
     # Install Yarn   
-    - name: GitHub Action for Yarn
-      uses: borales/actions-yarn@v2.3.0
+    - uses: borales/actions-yarn@v2.3.0
       with:
-          # Yarn command
-          cmd: install # install/ yarn install
+        cmd: install # install/ yarn install
           
     # build React App with Yarn       
     - name: Build React App
-      run:  npm build   
+      run: yarn build   
           
     # install surge     
     - name: Installing Surge
       run: npm install -g surge
-    
     
     - name: deploying on surge
       run: surge ./build http://hkbd.surge.sh/ --token ${{secrets.SURGE_Token}}
