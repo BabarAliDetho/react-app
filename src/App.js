@@ -6,7 +6,7 @@ function App () {
     return (
         <div classname="App">
             {/* <Dinner></Dinner> */}
-        <Dinner dishName="chicken"/>
+        <Dinner dishName="Updated and upgrade"/>
         </div>
     );
   }
