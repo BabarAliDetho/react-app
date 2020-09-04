@@ -6,7 +6,7 @@ function App () {
     return (
         <div classname="App">
             {/* <Dinner></Dinner> */}
-        <Dinner dishName="Updated and upgrade"/>
+        <Dinner dishName="UK, USA, UAE, EAST & ASIA"/>
         </div>
     );
   }
